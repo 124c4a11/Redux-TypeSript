@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux';
+import { todoReducer } from './todoReducer/todoReducer';
 
 import { userReducer } from './userReducer/userReducer';
 
 
 export const rootReducer = combineReducers({
-  users: userReducer
+  users: userReducer,
+  todo: todoReducer,
 });
 
 
